@@ -11,7 +11,20 @@ suite('Extension Test Suite', () => {
 
 	test('Utility Tests', () => {
 		const testDate = new Date("2019-8-16");
-		assert.strictEqual("08", getTwoDigitMonth(testDate.getMonth()));
-		assert.strictEqual("2019-08-16", generateDateString(testDate));
+		assert.strictEqual(getTwoDigitMonth(testDate.getMonth()),"08");
+		assert.strictEqual(generateDateString(testDate), "2019-08-16");
 	});
+
+	test('Extension should exist', () => {
+		const extension = vscode.extensions.getExtension('JV.JekyllPostTemplate');
+		assert.ok(extension);
+	});
+
+	test('Extension should register two commands', () => {
+		vscode.commands.getCommands(true)
+		  .then(commands => commands.filter(command => command.startsWith('jekyllposttemplate')))
+		  .then(commands => {
+			assert.strictEqual(commands.length === 2, true);
+		  });
+	  });
 });
