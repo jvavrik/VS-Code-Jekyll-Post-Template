@@ -29,7 +29,7 @@ export function activate(context: vscode.ExtensionContext) {
 		"author_profile: true\n" +
 		"---";
 
-	let newPost = vscode.commands.registerCommand('jekyllpostautotemplate.newpost', () => {
+	let newPost = vscode.commands.registerCommand('jekyllposttemplate.newpost', () => {
 		const newDraft = vscode.Uri.parse('untitled:' + path.join(directoryPath+'\\_posts', dateForTitle + '.md'));
 		vscode.workspace.openTextDocument(newDraft).then(document => {
 			const edit = new vscode.WorkspaceEdit();
@@ -46,7 +46,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(newPost);
 
-	let newDraft = vscode.commands.registerCommand('jekyllpostautotemplate.newdraft', () => {
+	let newDraft = vscode.commands.registerCommand('jekyllposttemplate.newdraft', () => {
 		const newDraft = vscode.Uri.parse('untitled:' + path.join(directoryPath+'\\_drafts', dateForTitle + '.md'));
 		vscode.workspace.openTextDocument(newDraft).then(document => {
 			const edit = new vscode.WorkspaceEdit();
