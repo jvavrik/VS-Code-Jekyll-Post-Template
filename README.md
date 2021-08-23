@@ -26,7 +26,9 @@ Save the file that was created and it will be automatically saved to the correct
 ## Known Issues & To-dos
 
 - JPT currently only works with an active workspace in VC Code.
-- There doesn't seem to be a way to add arguments to Command Palette commands, this would be perfect for creating a template with a title, since there is currently no way of auto-seeding a title.
+- There doesn't seem to be a way to add arguments to Command Palette commands, this would be perfect for creating a template with a title, since there is currently no way of auto-seeding a title. 
+- Should probably move to using a different VC Code feature to seed settings, such as default categories, layout, etc., instead of using the Command Palette. TBD.
+
 
 ## Release Notes
 
