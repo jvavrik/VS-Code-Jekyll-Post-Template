@@ -1,6 +1,6 @@
 {
-	"name": "jekyllpostautotemplate",
-	"displayName": "JekyllPostAutoTemplate",
+	"name": "jekyllposttemplate",
+	"displayName": "JekyllPostTemplate",
 	"description": "Create a tempalte for .md file blog posts in Jekyll",
 	"publisher": "James Vavrik",
 	"version": "0.0.1",
@@ -11,18 +11,18 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:jekyllpostautotemplate.newpost",
-		"onCommand:jekyllpostautotemplate.newdraft"
+		"onCommand:jekyllposttemplate.newpost",
+		"onCommand:jekyllposttemplate.newdraft"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "jekyllpostautotemplate.newpost",
+				"command": "jekyllposttemplate.newpost",
 				"title": "New Post"
 			},
 			{
-				"command": "jekyllpostautotemplate.newdraft",
+				"command": "jekyllposttemplate.newdraft",
 				"title": "New Draft"
 			}
 		]
