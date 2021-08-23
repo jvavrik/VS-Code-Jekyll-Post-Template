@@ -2,7 +2,7 @@
 	"name": "jekyllposttemplate",
 	"displayName": "JekyllPostTemplate",
 	"description": "Create a tempalte for .md file blog posts in Jekyll",
-	"publisher": "James Vavrik",
+	"publisher": "JV",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.59.0"

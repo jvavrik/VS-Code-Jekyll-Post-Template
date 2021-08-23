@@ -12,6 +12,17 @@ Both of these will create a new filed named **MM-dd-YY**, and created a pre-fill
 
 Save the file that was created and it will be automatically saved to the correct folder. You'll need to rename it to include the proper title.
 
+## Using JPT Locally
+
+1. Clone this repo
+2. Install vsce if not already installed `npm i -g vsce`
+3. Run `vsce package`
+4. A file called `jekyllposttemplate-{current.version.number}.vsix` should be in  your root workspace folder.
+5. In VS Code, select Extensions (**`Ctrl+Shift+X`**)
+6. Expand the ellipsis on the top right, and select **Install from VSIX...**
+7. Find your VSIX file, double click.
+8. Enjoy.
+
 ## Known Issues & To-dos
 
 - JPT currently only works with an active workspace in VC Code.
